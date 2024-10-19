@@ -22,15 +22,29 @@
 }
 .sign{
     background-color: #fff;
-    width: 33%;
+    width: 400px;
     position: relative;
 }
 .other{
     position: relative;
     width: 100%;
+    padding:10px;
+    border-top:2px solid #f3f3f3;
+    text-align: center;
 }
-.other::before{
-    content: "";
-    position: absolute;    
-    border: 2px solid grey;
+
+.fb, .goog{
+    padding: 12px;
+    width: 100%;
+    height: 50px;
+    background-color: #f3f3f3;
+    border-radius:10px;
+    margin: 10px 0;    
+}
+
+.email, .pass{
+    outline: none;
+}
+.submit{
+    width: 100%;
 }
