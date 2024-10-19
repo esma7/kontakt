@@ -23,7 +23,6 @@
 .sign{
     background-color: #fff;
     width: 400px;
-    position: relative;
 }
 .other{
     position: relative;
@@ -42,8 +41,9 @@
     margin: 10px 0;    
 }
 
-.email, .pass{
+.email input, .pass input{
     outline: none;
+    font-weight: bold;
 }
 .submit{
     width: 100%;

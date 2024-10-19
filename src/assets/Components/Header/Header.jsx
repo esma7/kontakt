@@ -72,8 +72,8 @@ const Header = () => {
         </div>
       </div>
     </header>
-    <div className="modal flex justify-end">        
-        <div className="sign p-6 font-montserrat">
+    {/* <div className="modal flex justify-end">  
+        <div className="sign flex flex-col gap-1 p-6 font-montserrat relative">
             <a className="flex justify-end" href="#"><b>X</b></a>
             <h2 className="font-bold mt-4 mb-3 text-3xl">Xoş gördük! 👋</h2>
             <p className="text-sm text-gray-500">Üstünlüklərindən faydalanmaq üçün daxil olun!</p>
@@ -81,10 +81,10 @@ const Header = () => {
             <button className="goog flex justify-center gap-1"><img src={google} alt="" />Google</button>
             <p className="other">və ya</p>
             <form className="w-100" action="#">
-                <div className="email flex my-4"><small><i className="mx-1 text-red-500">*</i>Elektron poçt</small><input type="text"/><FaRegEyeSlash/></div>
-                <div className="pass my-4 "><small><i className="mx-1 text-red-500">*</i>Şifrə</small><input type="password"/></div>
+                <div className="email flex items-center my-4 "><small><i className="mx-1 text-red-500">*</i>Elektron poçt</small><input className="p-1" type="text"/></div>
+                <div className="pass my-4 flex items-center justify-between "><small><i className="mx-1 text-red-500">*</i>Şifrə</small><input className="p-1" type="password"/><FaRegEyeSlash/></div>
                 <div className="save flex items-center justify-between">
-                    <div>
+                    <div className="flex items-center gap-1">
                         <input type="checkbox" id="check" /> 
                         <label htmlFor="check">Yadda saxla</label>
                     </div>
@@ -93,7 +93,7 @@ const Header = () => {
                 <button className="submit bg-red-500 rounded-md text-white my-4 p-2" type="submit">Daxil ol</button>
             </form>
         </div>
-    </div>
+    </div> */}
    </>
   );
 };
