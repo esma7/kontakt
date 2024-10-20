@@ -1,0 +1,10 @@
+
+.sideLinks li{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding: 2px;
+}
+.sideLinks li:hover{
+    color:red;
+}

@@ -9,6 +9,7 @@ import { GiScales } from "react-icons/gi";
 import { CiHeart } from "react-icons/ci";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaRegEyeSlash } from "react-icons/fa";
+import { FaRegEye } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 import  "../Header/header.css"
 
@@ -16,13 +17,17 @@ import  "../Header/header.css"
 
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword); 
+  };
   return (
-   <>
-   
+   <>   
     <header>
       <div className="headerUp">
         <img src={kontakImg} alt="" />
@@ -93,8 +98,8 @@ const Header = () => {
             <p className="other">və ya</p>
             <form className="w-100" action="#">
                 <div className="email flex items-center my-4 "><small><i className="mx-1 text-red-500">*</i>Elektron poçt</small><input className="p-1" type="text"/></div>
-                <div className="pass my-4 flex items-center justify-between "><small><i className="mx-1 text-red-500">*</i>Şifrə</small><input className="p-1" type="password"/>
-                <button className="hidePass"><FaRegEyeSlash/></button>
+                <div className="pass my-4 flex items-center justify-between "><small><i className="mx-1 text-red-500">*</i>Şifrə</small><input className="p-1" type={showPassword ? "text" : "password"}/>
+                <button  type="button" className="hidePass" onClick={togglePasswordVisibility}>{showPassword ? <FaRegEye /> : <FaRegEyeSlash />}</button>
                 </div>
                 <div className="save flex items-center justify-between">
                     <div className="flex items-center gap-1">

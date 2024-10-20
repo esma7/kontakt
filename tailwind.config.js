@@ -9,7 +9,6 @@ export default {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },
-
     },
     container: {
       center: true,  // Centers the container by default    
