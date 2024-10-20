@@ -11,7 +11,6 @@
     background-color: #F3F3F3;
 }
 .formClass input{
-    width: 800px;
     outline: none; 
     background-color: #F3F3F3;      
 }
@@ -48,3 +47,24 @@
 .submit{
     width: 100%;
 }
+
+@media(max-width:1200px){
+    .formClass input{
+        width: 600px;
+    }    
+}
+
+ @media(max-width:992px){
+
+    .formClass input{
+        width: 400px;
+    }
+    .headerBottom{
+        padding: 10px 20px;
+    }
+} 
+/* @media(max-width:768px){
+    .formClass input{
+        width: 250px;
+    }
+}   */
