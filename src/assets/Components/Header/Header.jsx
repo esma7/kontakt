@@ -88,7 +88,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-    {isModalOpen && <div className="modal transition h-auto flex justify-end absolute">  
+    {isModalOpen && <div className="modal transition  flex justify-end absolute">  
         <div className="sign flex flex-col gap-1 p-6 font-montserrat relative">
             <a className="flex justify-end close" href="#" onClick={toggleModal}><b>X</b></a>
             <h2 className="font-bold mt-4 mb-3 text-3xl">Xoş gördük! 👋</h2>
