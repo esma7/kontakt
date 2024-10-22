@@ -19,44 +19,184 @@ import { GiClothes } from "react-icons/gi";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { BsGiftFill } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
+import { FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleLeft } from "react-icons/fa";
 import  "../FirstSection/firstSection.css"
 
 
 
-
 const FirstSection = () => {
+
+  
   return (
     <section className='firstSection flex justify-between px-8 py-5'>
       <div className="sideBar w-[20%] h-[595px] overflow-y-scroll bg-white rounded-xl">
         <ul className='sideLinks px-4 py-2 '>
-            <li> <a href="#"> <i>1+1</i>Birlikdə al</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><MdOutlinePhoneAndroid/></i>Smartfonlar və aksesuarlar</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><BsSmartwatch/></i>Smart qadjetlər</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><MdComputer/></i>Notbuklar, PK, planşetlər</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><CgGames/></i>Geymerlər üçün məhsullar</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><HiOutlineTv/></i>TV, audio və foto</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><PiWashingMachineThin/></i>Mətbəx texnikası</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><GiVacuumCleaner/></i>Ev texnikası</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><FaWineGlassEmpty/></i>Qab-qacaq</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><PiHairDryer/></i>Gözəllik və sağlamlıq texnikası</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><MdOutlineSportsRugby/></i>Hobbi və əyləncə</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><VscTools/></i>Təmir tikinti</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><FaCarRear/></i>Avtomobil məhsulları</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><LuSofa/></i>Mebel və tekstil</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><IoHomeOutline/></i>Ev və bağ</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><GiDelicatePerfume/></i>Kosmetika və Baxım</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><PiBabyCarriage/></i>Uşaq aləmi</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><GiClothes/></i>Geyim,Ayaqqabı və Aksesuar</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><HiOutlineLightBulb/> </i>Kontakt plus xidmətləri</a><i className='opacity-50'><IoIosArrowForward/></i></li>
-            <li> <a href="#"> <i><BsGiftFill/></i>Hədiyyə və sertifikatlar</a><i className='opacity-50'><IoIosArrowForward/></i></li>
+            <li className=''>
+              <a href="#">
+                <i>1+1</i><span>Birlikdə al</span>
+              </a>
+              <button><IoIosArrowForward/></button>                         
+            </li>
+
+            <li>
+              <a href="#">
+                <i><MdOutlinePhoneAndroid/></i><span>Smartfonlar və aksesuarlar</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+
+            <li>
+              <a href="#">
+              <i><BsSmartwatch/></i><span>Smart qadjetlə</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><MdComputer/></i><span>Notbuklar, PK, planşetlər</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+
+            <li>
+              <a href="#">
+             <i><CgGames/></i><span>Geymerlər üçün məhsullar</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+
+            <li>
+              <a href="#">
+              <i><HiOutlineTv/></i><span>TV, audio və foto</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><PiWashingMachineThin/></i><span>Mətbəx texnikası</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><PiWashingMachineThin/></i><span>Ev texnikası</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+
+            <li>
+              <a href="#">
+              <i><FaWineGlassEmpty/></i><span>Qab-qacaq</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><PiHairDryer/></i><span>Gözəllik və sağlamlıq texnikası</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><MdOutlineSportsRugby/></i><span>Hobbi və əyləncə</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><VscTools/></i><span>Təmir tikinti</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><FaCarRear/></i><span>Avtomobil məhsulları</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><LuSofa/></i><span>Mebel və tekstil</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><IoHomeOutline/></i><span>Ev və bağ</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><GiDelicatePerfume/></i><span>Kosmetika və Baxım</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><PiBabyCarriage/></i><span>Uşaq aləmi</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><GiClothes/></i><span>Geyim,Ayaqqabı və Aksesuar</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><HiOutlineLightBulb/> </i><span>Kontakt plus xidmətləri</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+            <li>
+              <a href="#">
+              <i><BsGiftFill/></i><span>Hədiyyə və sertifikatlar</span>
+              </a>
+              <button><IoIosArrowForward/></button>
+
+            </li>
+                
         </ul>
       </div>
-      <div className="slider w-[50%]  bg-slate-600 rounded-xl">
-        <div className="slide">
-          <img src="https://kontakt.az/media/dinarys/banner/images/AZE_1X1_1-aa52ce12.webp" alt="" />
-        </div>
+      <div className="slider w-[50%] h-[595px] flex overflow-y-hidden gap-3 rounded-xl relative">
+        <button className='absolute top-[50%] right-0 text-white' type="button"><FaArrowCircleRight/></button>
+        <button className='absolute top-[50%] text-white' type="button"><FaArrowCircleLeft/></button>
+        <img className='' src="https://kontakt.az/media/dinarys/banner/images/2_copy_13_4_595_1-b15730ec.webp" alt="" />        
+        <img className='' src="https://kontakt.az/media/dinarys/banner/images/595x595_aze_1-fa49e77e.webp" alt="" />        
+        <img className='' src="https://kontakt.az/media/dinarys/banner/images/595x595_1-49a62e26.webp" alt="" />        
+        <img className='' src="https://kontakt.az/media/dinarys/banner/images/1_copy_3_3az567890_1-7b9084b7.webp" alt="" />        
+        <img className='' src="https://kontakt.az/media/dinarys/banner/images/2_7__1-a8e744d3.webp" alt="" />        
       </div>
-      <div className="dayOffer w-[20%] bg-white rounded-xl"></div>
+      <div className="dayOffer w-[20%] bg-white rounded-xl font-montserrat">
+        <h2 className='text-center font-bold my-3'>Günün təklifi</h2>
+        <div className="dealTimer flex gap-2 items-center justify-center">
+          <div className="hour w-[50px]"><p className='text-green-500'>08</p>saat</div>
+          <div className="minute w-[50px]"><p className='text-green-500'>38</p>dəqiqə</div>
+          <div className="second"><p className='text-green-500'>40</p >saniyə</div>
+        </div>
+
+      </div>
     </section>
   )
 }

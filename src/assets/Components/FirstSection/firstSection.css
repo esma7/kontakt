@@ -1,4 +1,4 @@
-
+/* 
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -15,7 +15,7 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: #000;
-}
+} */
 
 .sideLinks li{
     display: flex;
@@ -25,17 +25,36 @@
     padding: 2px;
     color:gray;
     height:40px;
-}
-
-.sideLinks li a{
-    display: flex;
-    align-items: center;
-    gap:10px;
+    cursor: pointer;
+    position: relative;
 }
 .sideLinks li:hover{
     color:red;
 }
-.sideLinks li i{
-    font-size: 20px;    
+.sideMenu{
+    /* display: none; */
+    width: 70%;
+    height: 595px;
+    background-color: white;
+    position: absolute;
+    left:20% ;
 }
+
+.sideLinks li:hover .sideMenu{
+    color:red;
+   
+}
+.sideLinks li a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.sideLinks span{
+    font-size: 14px;
+}
+
+
+
+
+
 
